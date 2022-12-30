@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'dart:math';
 
+// Calculates the BMI of a person.
 void main() {
   stdout.write("Enter your height: ");
   String? height = stdin.readLineSync();
@@ -12,11 +13,8 @@ void main() {
     print("You have typed an empty value. Please try again!");
   } else if (double.tryParse(height) == null ||
       double.tryParse(weight) == null) {
-    print("You have typed a disallowed value. Please try again!");
+    print("You have typed an invalid value. Please try again!");
   } else {
-    double heightParsed = double.parse(height);
-    double weightParsed = double.parse(weight);
-    int bmi = weightParsed ~/ pow(heightParsed, 2);
-    print(bmi);
+    print(double.parse(weight) ~/ pow(double.parse(height), 2));
   }
 }
