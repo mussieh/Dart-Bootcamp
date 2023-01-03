@@ -34,16 +34,16 @@ void main() {
   String randomWord = words.elementAt(Random().nextInt(words.length));
   List<String> blanks = generateBlanks(randomWord);
   int livesLeft = 6;
-  String? letterInput;
+  String letterInput;
 
   while (livesLeft > 0) {
     stdout.write("Guess a letter: ");
-    letterInput = stdin.readLineSync();
+    letterInput = stdin.readLineSync().toString().trim().toLowerCase();
     if (blanks.contains(letterInput)) {
       print("You've already guessed $letterInput");
     }
-    if (randomWord.contains(letterInput.toString())) {
-      replaceBlanks(letterInput.toString(), randomWord, blanks);
+    if (randomWord.contains(letterInput)) {
+      replaceBlanks(letterInput, randomWord, blanks);
     } else {
       print(
           "You guessed $letterInput, that's not in the word. You lose a life.");
@@ -61,4 +61,5 @@ void main() {
     print("\n");
     print(figures[livesLeft]);
   }
+  print("The random word was $randomWord");
 }
