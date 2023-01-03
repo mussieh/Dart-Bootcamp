@@ -35,7 +35,6 @@ void main() {
   List<String> blanks = generateBlanks(randomWord);
   int livesLeft = 6;
   String? letterInput;
-  print(randomWord);
 
   while (livesLeft > 0) {
     stdout.write("Guess a letter: ");
