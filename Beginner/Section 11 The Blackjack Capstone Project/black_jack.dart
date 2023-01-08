@@ -7,26 +7,16 @@ int pickRandomCard(List<int> cards) {
 }
 
 int getScore(List<int> cards) {
-  int cardSum = cards.reduce((value, element) => value + element);
-
-  // Replace Ace value of 11 with 1 for score > 21 early in the game.
-  if (cards.contains(11) && cardSum > 21) {
-    cards.remove(11);
-    cards.add(1);
-  }
-  cardSum = cards.reduce((value, element) => value + element);
-  return cardSum;
+  return cards.reduce((value, element) => value + element);
 }
 
 void hitComputer(List<int> computerCards) {
-  List<int> deckOfCards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
   while (getScore(computerCards) < 17) {
     computerCards.add(pickRandomCard(deckOfCards));
   }
 }
 
 void hitUser(List<int> userCards) {
-  List<int> deckOfCards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
   userCards.add(pickRandomCard(deckOfCards));
 }
 
@@ -70,7 +60,6 @@ void blackjack() {
   stdout.write("Do you want to play a game of Blackjack? Type 'y' or 'n': ");
   if (stdin.readLineSync() == 'y') {
     print(logo);
-    List<int> deckOfCards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
     List<int> userCards = [
       pickRandomCard(deckOfCards),
       pickRandomCard(deckOfCards)
