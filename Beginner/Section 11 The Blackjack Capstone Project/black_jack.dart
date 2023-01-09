@@ -2,6 +2,8 @@ import 'dart:math';
 import 'dart:io';
 import 'art.dart';
 
+var deckOfCards = const [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
+
 int pickRandomCard(List<int> cards) {
   return cards[Random().nextInt(cards.length)];
 }
