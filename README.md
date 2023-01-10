@@ -24,7 +24,7 @@ This repo only contains the sections for building essential knowledge of Dart to
 * [Section 11. The Blackjack Capstone Project](https://github.com/mussieh/Dart-Bootcamp/tree/main/Beginner/Section%2011%20The%20Blackjack%20Capstone%20Project)
 * [Section 12. Scope & the Number Guessing Game](https://github.com/mussieh/Dart-Bootcamp/tree/main/Beginner/Section%2012%20Scope%20%26%20Number%20Guessing%20Game)
 * Section 13. Debugging (not included as knowledge is assumed from another programming language)
-* [Section 14. Higher Lower Game Project]()
+* [Section 14. Higher Lower Game Project](https://github.com/mussieh/Dart-Bootcamp/tree/main/Beginner/Section%2014%20Higher%20Lower%20Game%20Project)
 
 **Intermediate Level**
 
@@ -53,4 +53,3 @@ In order to compile and run the source files, download the source files into a f
 * [Dart Language Tour](https://dart.dev/guides/language/language-tour)
 * [DartPad](https://dartpad.dev/?)
 * [100 Days of Code: The Complete Python Pro Bootcamp for 2023](https://www.udemy.com/course/100-days-of-code/)
-
