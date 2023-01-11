@@ -28,7 +28,8 @@ This repo only contains the sections for building essential knowledge of Dart to
 
 **Intermediate Level**
 
-* Work in Progress
+* [Section 15. The Coffee Machine Project](https://github.com/mussieh/Dart-Bootcamp/tree/main/Intermediate/Section%2015%20The%20Coffee%20Machine%20Project)
+* Section 16 & 17 (Work in Progress)
 
 ## Getting Started
 
